@@ -427,7 +427,7 @@ getRestLetterFitCol (
     "diagonalBottomLeftToTopRight",
   ];
 
-  const wordSearchOne = new WordSearch(letterGrid, searchDirectionsArr, 0);
+  const wordSearchOne = new WordSearch(letterGrid, searchDirectionsArr);
   const wordSearchMulti = new WordSearch(letterGrid, searchDirectionsArr, 1);
   const resultOne = wordSearchOne.find(["java", "basic"]);
   const resultMulti = wordSearchMulti.find(["java", "basic"]);
