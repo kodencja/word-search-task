@@ -71,7 +71,7 @@ getArrAllLettersRowsColsForAllWords(words) {
   // 4) get search word' letters position (row, col) in letterGrid
 getWordLettersPositionGrid(wordLetter, indx){
     // here 'i' means no of row
-    return letterGrid.reduce((acc, lettersInRowGrid, i) => {
+    return this.letterGrid.reduce((acc, lettersInRowGrid, i) => {
       const wordLettersIndxArrInGrid = this.getWordLettersIndxArrInGrid(
         lettersInRowGrid,
         wordLetter
