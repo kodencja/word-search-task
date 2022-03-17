@@ -429,11 +429,23 @@ getRestLetterFitCol (
 
   const wordSearchOne = new WordSearch(letterGrid, searchDirectionsArr);
   const wordSearchMulti = new WordSearch(letterGrid, searchDirectionsArr, 1);
-  const resultOne = wordSearchOne.find(["java", "basic"]);
-  const resultMulti = wordSearchMulti.find(["java", "basic"]);
+  const resultOne_1 = wordSearchOne.find(["java"]);
+  const resultOne_2 = wordSearchOne.find(["java", "basic"]);
+  const resultOne_3 = wordSearchOne.find(["java", "basic", "vaj"]);
+  const resultMulti_1 = wordSearchMulti.find(["java", "basic"]);
+  const resultMulti_2 = wordSearchMulti.find(["java", "basic"]);
+  const resultMulti_3 = wordSearchMulti.find(["java", "basic", "vaj"]);
 
-  console.log('resultOne');
-  console.log(resultOne);
-  console.log('resultMulti');
-  console.log(resultMulti);
+  console.log('resultOne_1');
+  console.log(resultOne_1);
+  console.log('resultOne_2');
+  console.log(resultOne_2);
+  console.log('resultOne_3');
+  console.log(resultOne_3);
+  console.log('resultMulti_1');
+  console.log(resultMulti_1);
+  console.log('resultMulti_2');
+  console.log(resultMulti_2);
+  console.log('resultMulti_3');
+  console.log(resultMulti_3);
 
